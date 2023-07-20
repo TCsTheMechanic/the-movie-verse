@@ -7,7 +7,7 @@ export default async function TopRatedMovies() {
   const movies = await getTopRatedMovies()
 
   return (
-    <MoviesList listType="Top Rated">
+    <MoviesList listTitle="Top Rated">
       {movies.results.map((movie) => (
         <MovieCard
           key={movie.id}

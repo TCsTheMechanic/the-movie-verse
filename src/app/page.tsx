@@ -7,7 +7,7 @@ export default async function Home() {
   const movies = await getNowPlayingMovies()
 
   return (
-    <MoviesList listType="Now Playing">
+    <MoviesList listTitle="Now Playing">
       {movies.results.map((movie) => (
         <MovieCard
           key={movie.id}

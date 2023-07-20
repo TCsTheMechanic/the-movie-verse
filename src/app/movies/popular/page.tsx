@@ -7,7 +7,7 @@ export default async function PopularMovies() {
   const movies = await getPopularMovies()
 
   return (
-    <MoviesList listType="Popular">
+    <MoviesList listTitle="Popular">
       {movies.results.map((movie) => (
         <MovieCard
           key={movie.id}

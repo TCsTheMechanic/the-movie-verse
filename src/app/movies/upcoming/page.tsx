@@ -7,7 +7,7 @@ export default async function UpcomingMovies() {
   const movies = await getUpcomingMovies()
 
   return (
-    <MoviesList listType="Upcoming">
+    <MoviesList listTitle="Upcoming">
       {movies.results.map((movie) => (
         <MovieCard
           key={movie.id}

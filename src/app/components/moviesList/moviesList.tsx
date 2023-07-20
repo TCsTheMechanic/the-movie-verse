@@ -1,13 +1,13 @@
 export default function MoviesList({
   children,
-  listType,
+  listTitle,
 }: {
   children: React.ReactNode
-  listType: string
+  listTitle: string
 }) {
   return (
     <main className="flex flex-col space-y-2 p-6">
-      <p className="font-bold">{listType}</p>
+      <p className="font-bold">{listTitle}</p>
       <div className="flex flex-wrap space-y-2 items-center justify-between">
         {children}
       </div>
