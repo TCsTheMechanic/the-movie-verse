@@ -8,6 +8,7 @@ export const API_ROUTES = {
     now_playing: `${API_BASE_URL}/movie/now_playing`,
     top_rated: `${API_BASE_URL}/movie/top_rated`,
     popular: `${API_BASE_URL}/movie/popular`,
+    upcoming: `${API_BASE_URL}/movie/upcoming`,
     details: `${API_BASE_URL}/movie/`,
     credits: `${API_BASE_URL}/movie/`,
   },
