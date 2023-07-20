@@ -7,7 +7,7 @@ export default function MoviesList({
 }) {
   return (
     <main className="flex flex-col space-y-2 p-6">
-      <p className="font-bold">{listTitle}</p>
+      <p className="text-lg font-bold">{listTitle}</p>
       <div className="flex flex-wrap space-y-2 items-center justify-between">
         {children}
       </div>

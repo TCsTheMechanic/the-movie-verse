@@ -31,8 +31,10 @@ export default function MovieCard({
         alt={alt}
       />
       <div className="flex flex-col w-36">
-        <p className="font-bold">{title}</p>
-        <time dateTime={date}>{format(parseISO(date), "LLLL d, yyyy")}</time>
+        <p className="text-sm font-bold">{title}</p>
+        <time dateTime={date} className="text-sm text-zinc-400">
+          {format(parseISO(date), "LLLL d, yyyy")}
+        </time>
       </div>
     </Link>
   )
