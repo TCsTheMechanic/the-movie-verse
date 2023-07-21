@@ -8,6 +8,7 @@ interface MovieCardProps {
   alt: string
   title: string
   date: string
+  voteAverage: number
 }
 
 export default function MovieCard({
@@ -16,12 +17,18 @@ export default function MovieCard({
   alt,
   title,
   date,
+  voteAverage,
 }: MovieCardProps) {
   return (
     <Link
       href={"/about/" + id}
-      className="flex flex-col justify-center bg-zinc-700 rounded-md items-center w-40 h-80"
+      className="flex flex-col bg-zinc-700 rounded-md items-center h-80 mb-2 mr-2"
     >
+      <div className="flex justify-end w-36">
+        <p className="flex absolute items-center justify-center rounded-full bg-zinc-700 w-8 h-8 mt-1">
+          {voteAverage}
+        </p>
+      </div>
       <Image
         className="rounded-md"
         priority={true}
@@ -30,7 +37,8 @@ export default function MovieCard({
         src={imageUrl}
         alt={alt}
       />
-      <div className="flex flex-col w-36">
+
+      <div className="flex flex-col w-36 mt-2">
         <p className="text-sm font-bold">{title}</p>
         <time dateTime={date} className="text-sm text-zinc-400">
           {format(parseISO(date), "LLLL d, yyyy")}
