@@ -14,7 +14,7 @@ export default function CastMemberCard({
   alt,
 }: castMemberCardProps) {
   return (
-    <div className="flex flex-col bg-zinc-700 rounded-md items-center w-40 h-72">
+    <div className="flex flex-col bg-zinc-700 rounded-md items-center">
       <Image
         className="rounded-md"
         priority={true}
