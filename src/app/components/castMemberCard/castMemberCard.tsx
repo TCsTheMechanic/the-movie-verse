@@ -14,7 +14,7 @@ export default function CastMemberCard({
   alt,
 }: castMemberCardProps) {
   return (
-    <div className="flex flex-col justify-center bg-zinc-700 rounded-md items-center w-40 h-72">
+    <div className="flex flex-col bg-zinc-700 rounded-md items-center w-40 h-72">
       <Image
         className="rounded-md"
         priority={true}
@@ -23,7 +23,7 @@ export default function CastMemberCard({
         src={imageUrl}
         alt={alt}
       />
-      <div className="flex flex-col w-36">
+      <div className="flex flex-col w-36 mt-2">
         <p className="text-sm">
           {name} / {character}
         </p>
