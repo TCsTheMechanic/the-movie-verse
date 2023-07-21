@@ -26,7 +26,7 @@ export default function MovieCard({
     >
       <div className="flex justify-end w-36">
         <p className="flex absolute items-center justify-center rounded-full bg-zinc-700 w-8 h-8 mt-1">
-          {voteAverage}
+          {voteAverage.toFixed(1)}
         </p>
       </div>
       <Image

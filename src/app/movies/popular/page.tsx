@@ -16,6 +16,7 @@ export default async function PopularMovies() {
           alt={movie.title + " image"}
           title={movie.title}
           date={movie.release_date}
+          voteAverage={movie.vote_average}
         />
       ))}
     </MoviesList>
