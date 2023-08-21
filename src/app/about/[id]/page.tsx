@@ -9,7 +9,7 @@ export default async function About({ params }: any) {
   const credits = await getMovieCredits(params.id)
 
   return (
-    <main className="flex flex-col p-6 space-y-4 md:p-24">
+    <main className="flex flex-col p-6 mt-10 space-y-4 md:p-24">
       <div className="flex space-x-6">
         <Image
           priority={true}
