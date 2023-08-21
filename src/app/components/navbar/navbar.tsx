@@ -10,7 +10,7 @@ export default function Navbar({
   setIsSidebarOpen: React.Dispatch<SetStateAction<boolean>>
 }) {
   return (
-    <div className="flex justify-between bg-zinc-900 w-screen p-3">
+    <div className="flex fixed z-10 justify-between bg-zinc-900 w-screen p-3">
       <Link href="/" className="flex space-x-3">
         <p className="text-xl">TMV</p>
         <p className="text-xl">The Movie Verse</p>
