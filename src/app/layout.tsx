@@ -1,4 +1,6 @@
-import LayoutBars from "./components/layoutBars/layoutBars"
+import Navbar from "./components/navbar/navbar"
+import Sidebar from "./components/sidebar/sidebar"
+import { SidebarProvider } from "./contexts/SidebarContext"
 import "./globals.css"
 import type { Metadata } from "next"
 
@@ -15,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-zinc-800 text-zinc-50">
-        <LayoutBars />
+        <SidebarProvider>
+          <Navbar />
+          <Sidebar />
+        </SidebarProvider>
         {children}
       </body>
     </html>

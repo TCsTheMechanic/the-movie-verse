@@ -1,8 +1,14 @@
+"use client"
+
+import { SidebarContext } from "@/app/contexts/SidebarContext"
 import { Star, Monitor, Film, Users } from "lucide-react"
 import Link from "next/link"
+import { useContext } from "react"
 
 export default function Sidebar() {
-  return (
+  const { isSidebarOpen } = useContext(SidebarContext)
+
+  return isSidebarOpen ? (
     <aside className="flex flex-col bg-zinc-900 fixed right-0 top-14 z-10">
       <Link href="/" className="flex space-x-3 p-3 border-y border-zinc-800">
         <Monitor />
@@ -30,5 +36,7 @@ export default function Sidebar() {
         <p>Upcoming</p>
       </Link>
     </aside>
+  ) : (
+    <></>
   )
 }
